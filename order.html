@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Заказы</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="icon" href="фон/Щит.png" type="img-flash-icon">
+</head>
+<body>
+    <header>
+       <h1 align="center">"Золотой грим"</h1>
+        <h2 align="center">Только у нас, качественные товары</h2>
+    </header>
+    <nav1>
+        <ul class="complex_list" >
+         <li><a href="index.html"> Главная </a></li>
+         <li class="podmen"><a>Меню</a>
+             <ul>
+             <li><a href="employee.html">Работники</a></li>
+             <li><a href="about.html">О компании</a></li>
+             <li><a href="order.html">Заказать</a></li>
+             </ul>
+         </li>
+         </ul> 
+     </nav1>
+    <div id="main">
+    <article>
+        <center>
+        <h3>Оформление заказа</h3>
+        <form action="orderup" method="post">
+            <table>
+                <tr>
+                    <td align="right">
+                        <label for="last_name">Фамилия</label>
+                    </td>
+                    <td>
+                        <input type="text" id="last_name" name="last_name" required placeholder="Введите фамилию" />
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right">
+                        <label for="first_name">Имя</label>
+                    </td>
+                    <td>
+                        <input type="text" id="first_name" name="first_name" required placeholder="Введите имя" />
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right">
+                        <label for="patronymic">Отчество</label>
+                    </td>
+                    <td>
+                        <input type="text" id="patronymic" name="patronymic" placeholder="Введите отчество" />
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right">
+                        <label for="email">Email</label>
+                    </td>
+                    <td>
+                        <input type="email" id="email" name="email" required placeholder="Введите email" />
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right">
+                        <label for="phone">Телефон</label>
+                    </td>
+                    <td>
+                        <input type="tel" id="phone" name="phone" required placeholder="Введите телефон" />
+                    </td>
+                </tr>                
+                <tr>
+                    <td align="right">
+                        <label for="okrug">Товар</label>
+                    </td>
+                    <td>
+                        <select id="okrug" name="okrug" required placeholder="Выберите товар">
+                            <option value="">Выберите товар</option>
+                            <option value="Центральный">Маска для волос</option>
+                            <option value="Северо-Западный">Шампунь</option>
+                            <option value="Приволжский">МАсло для волос</option>
+                            <option value="Южный">Крем для тела</option>
+                            <option value="Северо-Кавказский">Лак для волос</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td align="right">Оформляю</td>
+                    <td></td>  <!--  Пустая ячейка, чтобы выравнивание сохранилось -->
+                </tr>
+                <tr>
+                    <td valign="top" align="right">
+                        <label for="wishes">Пожелания:</label>
+                    </td>
+                    <td>
+                        <textarea id="wishes" name="wishes" placeholder="Введите ваши пожелания"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center" colspan="2">
+                        <input type="submit" value="Подтвердить заказ" />
+                    </td>
+                </tr>
+            </table>    
+        </form>
+    </article>
+</center>
+    <nav><ul class="menu">
+        <li><a href="index.html"> Главная </a></li><br>
+        <li><a>Меню</a>
+            <ul>
+            <li><a href="employee.html">Работники</a></li>
+            <li><a href="about.html">О компании</a></li>
+            <li><a href="order.html">Заказать</a></li>
+            </ul>
+        </li>
+        </ul>
+    </nav>
+    <aside></aside>
+    </div>
+    <footer>
+        <a href="#top"class="scroll-to-top" > Наверх</a>   
+        <p><i>©Товары салона красоты</i></p>
+    </footer>    
+    </body>
+</html>
